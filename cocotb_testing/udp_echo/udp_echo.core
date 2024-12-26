@@ -29,6 +29,17 @@ targets:
         filesets: [rtl]
         generate: [pyhp_generate]
         toplevel: [udp_echo_top]
+    asic:
+        default_tool: design_compiler
+        filesets: [rtl]
+        generate: [pyhp_generate]
+        toplevel: [udp_echo_top]
+        tools:
+            design_compiler:
+                script_dir: $BEEHIVE_DESIGN_ROOT/dc
+                dc_script: udp_echo_top.tcl
+                target_library: NangateOpenCellLibrary
+                libs: $BEEHIVE_DESIGN_ROOT/NangateOpenCellLibrary.db
 generate:
     pyhp_generate:
         generator: pyhp_gen

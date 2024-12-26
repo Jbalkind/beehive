@@ -1,7 +1,7 @@
 # Makefile
 
 # defaults
-SIM ?= Questa
+SIM ?= verilator
 TOPLEVEL_LANG ?= verilog
 
 # This is already in the flist, but cocotb needs to receive at least one Verilog 
