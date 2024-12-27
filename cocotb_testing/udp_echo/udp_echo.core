@@ -38,7 +38,7 @@ targets:
             design_compiler:
                 script_dir: $BEEHIVE_DESIGN_ROOT/dc
                 dc_script: udp_echo_top.tcl
-                target_library: NangateOpenCellLibrary
+                target_library: $BEEHIVE_DESIGN_ROOT/NangateOpenCellLibrary.db
                 libs: $BEEHIVE_DESIGN_ROOT/NangateOpenCellLibrary.db
 generate:
     pyhp_generate:
