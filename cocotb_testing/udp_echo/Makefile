@@ -26,7 +26,7 @@ TOPLEVEL = udp_echo_top
 MODULE = tb_udp_echo
 
 # include cocotb's make rules to take care of the simulator setup
-include $(shell cocotb-config --makefiles)/Makefile.sim
+#include $(shell cocotb-config --makefiles)/Makefile.sim
 
 export BEEHIVE_DESIGN_ROOT=$(PWD)
 
